@@ -1,0 +1,60 @@
+Date : 2024-04-10 00:29:15
+Directory : \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_
+Total : 33 files,  1517 codes, 256 comments, 345 blanks, all 2118 lines
+
+Languages
++--------------+------------+------------+------------+------------+------------+
+| language     | files      | code       | comment    | blank      | total      |
++--------------+------------+------------+------------+------------+------------+
+| C++          |         30 |      1,479 |        256 |        339 |      2,074 |
+| Markdown     |          1 |         16 |          0 |          2 |         18 |
+| Makefile     |          1 |         12 |          0 |          3 |         15 |
+| Shell Script |          1 |         10 |          0 |          1 |         11 |
++--------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                          | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                             |         33 |      1,517 |        256 |        345 |      2,118 |
++-------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------+--------------+------------+------------+------------+------------+
+| filename                                                                      | language     | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------+--------------+------------+------------+------------+------------+
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\Acceptor.cpp    | C++          |         28 |          2 |          6 |         36 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\Acceptor.h      | C++          |         20 |          2 |          6 |         28 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\BankServer.cpp  | C++          |         56 |         30 |         22 |        108 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\BankServer.h    | C++          |         23 |          3 |          6 |         32 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\Buffer.cpp      | C++          |         65 |          7 |         14 |         86 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\Buffer.h        | C++          |         20 |          0 |          5 |         25 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\Channel.cpp     | C++          |         96 |          2 |          9 |        107 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\Channel.h       | C++          |         42 |          6 |         10 |         58 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\Connection.cpp  | C++          |        125 |         15 |         13 |        153 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\Connection.h    | C++          |         47 |          1 |         11 |         59 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\EchoServer.cpp  | C++          |         56 |         29 |         22 |        107 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\EchoServer.h    | C++          |         23 |          3 |          6 |         32 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\Epoll.cpp       | C++          |         69 |         12 |          8 |         89 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\Epoll.h         | C++          |         24 |         15 |          8 |         47 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\EventLoop.cpp   | C++          |        121 |         14 |         22 |        157 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\EventLoop.h     | C++          |         51 |          8 |         17 |         76 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\InetAddress.cpp | C++          |         26 |          0 |          8 |         34 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\InetAddress.h   | C++          |         18 |          2 |          5 |         25 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\Socket.cpp      | C++          |         80 |         10 |         18 |        108 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\Socket.h        | C++          |         30 |          2 |          6 |         38 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\TcpServer.cpp   | C++          |        121 |         15 |         22 |        158 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\TcpServer.h     | C++          |         47 |          1 |          7 |         55 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\ThreadPool.cpp  | C++          |         56 |         11 |         15 |         82 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\ThreadPool.h    | C++          |         30 |          4 |          7 |         41 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\Timestamp.cpp   | C++          |         30 |         18 |          7 |         55 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\Timestamp.h     | C++          |         14 |          1 |          5 |         20 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\bank_client.cpp | C++          |         54 |         16 |         19 |         89 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\bank_server.cpp | C++          |         26 |          6 |          8 |         40 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\client.cpp      | C++          |         55 |         15 |         19 |         89 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\echo_server.cpp | C++          |         26 |          6 |          8 |         40 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\makefile        | Makefile     |         12 |          0 |          3 |         15 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\readme.md       | Markdown     |         16 |          0 |          2 |         18 |
+| \\wsl.localhost\Ubuntu-20.04\home\dq\reactor\netserver-dq\35_\tmp1.sh         | Shell Script |         10 |          0 |          1 |         11 |
+| Total                                                                         |              |      1,517 |        256 |        345 |      2,118 |
++-------------------------------------------------------------------------------+--------------+------------+------------+------------+------------+
