@@ -1,17 +1,12 @@
-30_是为了处理30中的bug而创建的。
+应用技术：Linux、C++11、Socket、TCP、Epoll
 
-    /*
-     * bug描述：
-     * 在使用工作线程的情况下，若运算后的message长度>=16，SendInLoop执行时发现data指向的内存异常。
-     *
-     * 原因解析： 
-     * string的内存机制：
-     *      字符串长度<16时，只使用栈内存，string.data()指向&string的后一个八字节；
-     *      字符串长度>=16时，string.data()指向堆内存。
-     * 因此，若运算后的message长度>=16，data()指向堆内存；
-     * Send()返回后，EchoServer::OnMessage立马结束，那么EchoServer::OnMessage中的message对象就会释放堆内存；
-     * 此时放在IO线程任务队列中的SendInLoop被取出开始执行，其中的字符指针data指向原来message对象的堆内存（但已经被释放了）
-     * 
-     * 解决方法：
-     * 既然难以阻止EchoServer::OnMessage中的message对象释放，那就在调用SendInLoop时传入string副本。
-     */
+项目描述：用于Linux多线程服务器的非阻塞网络库，并发处理客户端请求，可以实现上万的并发连接数据交换。
+
+主要工作：
+
+1、底层使用 Epoll (LT/ET均实现) 的 I/O 复用模型，结合非阻塞 I/O 实现多线程的 Reactor 并发模型；
+2、采用 one loop per thread 线程模型，并向上封装线程池避免线程频繁创建和销毁带来的性能开销；
+3、遵循 RAII 手法使用智能指针管理内存，减小内存泄露风险；
+4、使用 eventfd 作为事件通知描述符，高效派发事件到其他线程执行异步任务；
+5、实现定时器管理结构，内部使用 Linux 的 timerfd 通知到期任务，高效管理定时任务；
+6、实现优雅关闭连接。
