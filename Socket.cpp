@@ -45,7 +45,7 @@ void Socket::setReuseaddr(bool on)
 {
     // 打开地址复用功能：
     // 如果当前启动进程绑定的 IP+PORT 与处于TIME_WAIT状态的连接占用的 IP+PORT 存在冲突，但是新启动的进程使用了 SO_REUSEADDR 选项，那么该进程就可以绑定成功
-    // 绑定的 IP地址 + 端口时，只要 IP 地址不是正好(exactly)相同（例如，0.0.0.0:8888和192.168.1.100:8888），那么允许绑定
+    // 绑定的 IP地址 + 端口时，只要 IP 地址不是正好(exactly)相同（例如，0.0.0.0:8888 和 192.168.1.100:8888），那么允许绑定
     int opt = on ? 1 : 0;
     setsockopt(fd_, SOL_SOCKET, SO_REUSEADDR, &opt, static_cast<socklen_t>(sizeof opt));
 }
